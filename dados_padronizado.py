@@ -48,4 +48,6 @@ df['nota_portugues'] = df['nota_portugues'].round(1)
 df['media'] = df['media'].round(2)
 
 # Salvar o resultado criando um novo arquivo xlsx 
-df.to_excel("Base_Padronizada_Completa.xlsx", index=False)
+print(df['aprovado'].value_counts(normalize=True) * 100)
+
+#df.to_excel("Base_Padronizada_Completa.xlsx", index=False)
